@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness club</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-
-        <div class="left">
-            <img src="img/gogo.png" onclick="window.open('index.html', '_self')" alt="logo">
-            <div class="fitness" onclick="window.open('index.html', '_self')" >Fitness Club</div>
-
-
+      <div class="left">
+        <img
+          src="img/gogo.png"
+          onclick="window.open('index.html', '_self')"
+          alt="logo"
+        />
+        <div class="fitness" onclick="window.open('index.html', '_self')">
+          Fitness Club
         </div>
-        <div class="mid">
-            <ul class="navbar">
-                <li> <a href="#" class="active">Home</a></li>
-                <li> <a href="#" class="active">about</a></li>
-                <li> <a href="#" class="active">Fitness Calculator</a></li>
-                <li> <a href="#" class="active">contact</a></li>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" class="active">about</a></li>
+          <li><a href="#" class="active">Fitness Calculator</a></li>
+          <li><a href="#" class="active">contact</a></li>
+        </ul>
+      </div>
 
-            </ul>
-        </div>
-
-        <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
     </header>
 
     <div class="container">
-        <h1>Admission Open</h1>
-        <form action="#">
-            <div class="form-group">
-                <input type="text" name="nam" placeholder="Enter Your Name">
-            </div>
+      <h1>Admission Open</h1>
 
-            <div class="form-group">
-                <input type="text" name="nam" placeholder="Enter Your Gender">
-            </div>
+      <form action="submit.php" method="post">
 
-            <div class="form-group">
-                <input type="text" name="nam" placeholder="Enter Your Number">
-            </div>
+        <div class="form-group">
+          <label for="name"></label>
+          <input type="text" name="name" placeholder="Enter Your Name" />
+        </div>
 
-            <div class="form-group">
-                <input type="text" name="nam" placeholder="Enter Your Age">
-            </div>
-            <button class="btn">Submit</button>
-        </form>
+        <div class="form-group">
+          <label for="gender"></label>
+          <input type="text" name="gender" placeholder="Enter Your Gender" />
+        </div>
 
+        <div class="form-group">
+          <label for="number"></label>
+          <input type="text" name="number" placeholder="Enter Your Number" />
+        </div>
+
+        <div class="form-group">
+          <label for="age"></label>
+          <input type="text" name="age" placeholder="Enter Your Age" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>
